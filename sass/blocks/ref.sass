@@ -1,0 +1,29 @@
+.ref
+    padding-top: 32px
+    &__title
+        @include medium-title
+        margin-bottom: 32px
+    &-item
+        border-radius: 16px
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05)
+        padding: 20px 20px 20px 24px
+        margin-bottom: 12px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__title
+            @include small-title
+        &__descr
+            margin-top: 4px
+            font-size: 13px
+            font-weight: 400
+            color: #949494
+            line-height: 140%
+            max-width: 380px
+
+@media (min-width: 320px) and (max-width: 576px)
+    .ref
+        &__title
+            font-size: 30px
+            margin-bottom: 20px
+        

@@ -1,0 +1,44 @@
+@mixin make-container() 
+  width: 1200px
+  margin: 0 auto
+  max-width: 95%
+
+
+// Применение
+.custom-container 
+  @include make-container()
+
+* 
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+
+.button
+    border: none
+    outline: none
+    background-color: $light-color
+    color: $black-color
+    border-radius: 12px
+    padding: 15px 0px
+    font-size: 15px
+    font-weight: 600
+
+p
+    margin: 0
+
+.link
+    height: 56px
+    width: 56px
+    background-color: #F9F9F9
+    border-radius: 13px 
+    @include flex-center
+
+a
+    text-decoration: none
+    &:hover
+        color: $black-color

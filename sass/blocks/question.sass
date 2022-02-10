@@ -1,0 +1,69 @@
+.question
+    &__title
+        @include medium-title
+    &-slider
+        position: relative
+        &-item
+            padding: 16px
+            border-radius: 16px
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05)
+            min-height:1
+            display: flex
+            justify-content: space-between
+            align-items: start
+            min-height: 175px
+            img
+                max-height: 140px
+            &__title
+                margin-bottom: 8px
+                @include small-title
+            &__descr
+                font-size: 15px
+                font-weight: 400
+                color: #949494
+                line-height: 140%
+
+
+.slick-next
+    position: absolute
+    top: 50%
+    right: 0
+    width: 44px
+    height: 44px
+    border-radius: 50px
+    transform: translateY(-50%)
+    border: none
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09)
+    z-index: 10
+    background: $light-color url("../img/question/next.svg") center center no-repeat
+
+.slick-prev
+    position: absolute
+    top: 50%
+    left: 0
+    width: 44px
+    height: 44px
+    border-radius: 50px
+    transform: translateY(-50%)
+    border: none
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09)
+    z-index: 10
+    background: $light-color url("../img/question/prev.svg") center center no-repeat
+
+.slick-slide
+    margin: 0px 10px
+
+.slick-list
+    padding: 10px 0px
+
+.slick-slider
+    padding: 20px 0px
+
+@media (min-width: 320px) and (max-width: 576px)
+    .question
+        &__title
+            font-size: 30px
+            margin-bottom: 0
+    .slick-slide
+        margin: 0px 20px
+    
